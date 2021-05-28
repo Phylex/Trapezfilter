@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_peakfinder_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_peakfinder" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="800000000fs"></ZoomEndTime>
+      <Cursor1Time time="404000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="165"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_peakfinder/in_signal" type="array">
+      <obj_property name="ElementShortName">in_signal[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_signal[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/in_cycle_tick" type="logic">
+      <obj_property name="ElementShortName">in_cycle_tick</obj_property>
+      <obj_property name="ObjectShortName">in_cycle_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/in_speed_tick" type="logic">
+      <obj_property name="ElementShortName">in_speed_tick</obj_property>
+      <obj_property name="ObjectShortName">in_speed_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/syncd_cycle_tick" type="logic">
+      <obj_property name="ElementShortName">syncd_cycle_tick</obj_property>
+      <obj_property name="ObjectShortName">syncd_cycle_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/syncd_speed_tick" type="logic">
+      <obj_property name="ElementShortName">syncd_speed_tick</obj_property>
+      <obj_property name="ObjectShortName">syncd_speed_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/syncd_sig" type="array">
+      <obj_property name="ElementShortName">syncd_sig[7:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_sig[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Reversed">false</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/peak" type="logic">
+      <obj_property name="ElementShortName">peak</obj_property>
+      <obj_property name="ObjectShortName">peak</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_peakfinder/peakfinder_inst/buf" type="array">
+      <obj_property name="ElementShortName">buf[0:2][7:0]</obj_property>
+      <obj_property name="ObjectShortName">buf[0:2][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/tb_peakfinder/peakfinder_inst/buf[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_peakfinder/peakfinder_inst/buf[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_peakfinder/peakfinder_inst/buf[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

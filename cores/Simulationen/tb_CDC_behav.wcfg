@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_CDC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="filtertypes" />
+            <top_module name="glbl" />
+            <top_module name="tb_CDC" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="166666666fs"></ZoomStartTime>
+      <ZoomEndTime time="1166666667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="divider" fp_name="divider59">
+      <obj_property name="label">clocks</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/adc_clk" type="logic">
+      <obj_property name="ElementShortName">adc_clk</obj_property>
+      <obj_property name="ObjectShortName">adc_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/fpga_clk" type="logic">
+      <obj_property name="ElementShortName">fpga_clk</obj_property>
+      <obj_property name="ObjectShortName">fpga_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/frame" type="array">
+      <obj_property name="ElementShortName">frame[95:0]</obj_property>
+      <obj_property name="ObjectShortName">frame[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/frame_out" type="array">
+      <obj_property name="ElementShortName">frame_out[95:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_out[95:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider58">
+      <obj_property name="label">Fifo external signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/fifo_wr_en" type="logic">
+      <obj_property name="ElementShortName">fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/fifo_rd_en" type="logic">
+      <obj_property name="ElementShortName">fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/fifo_full" type="logic">
+      <obj_property name="ElementShortName">fifo_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/fifo_empty" type="logic">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/frame_count" type="array">
+      <obj_property name="ElementShortName">frame_count[11:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_count[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider64">
+      <obj_property name="label">Fifo internal signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/CDC_inst/xpm_fifo_async_inst/din" type="array">
+      <obj_property name="ElementShortName">din[95:0]</obj_property>
+      <obj_property name="ObjectShortName">din[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/CDC_inst/xpm_fifo_async_inst/dout" type="array">
+      <obj_property name="ElementShortName">dout[95:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/CDC_inst/xpm_fifo_async_inst/wr_rst_busy" type="logic">
+      <obj_property name="ElementShortName">wr_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">wr_rst_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/CDC_inst/xpm_fifo_async_inst/rd_rst_busy" type="logic">
+      <obj_property name="ElementShortName">rd_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">rd_rst_busy</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider63">
+      <obj_property name="label">Parameter CDC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/merged_params" type="array">
+      <obj_property name="ElementShortName">merged_params[61:0]</obj_property>
+      <obj_property name="ObjectShortName">merged_params[61:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/transfer_param_flag" type="logic">
+      <obj_property name="ElementShortName">transfer_param_flag</obj_property>
+      <obj_property name="ObjectShortName">transfer_param_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/param_transfer_ack" type="logic">
+      <obj_property name="ElementShortName">param_transfer_ack</obj_property>
+      <obj_property name="ObjectShortName">param_transfer_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/transfered_parameters" type="array">
+      <obj_property name="ElementShortName">transfered_parameters[61:0]</obj_property>
+      <obj_property name="ObjectShortName">transfered_parameters[61:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider61">
+      <obj_property name="label">reset CDC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/filter_reset_in" type="logic">
+      <obj_property name="ElementShortName">filter_reset_in</obj_property>
+      <obj_property name="ObjectShortName">filter_reset_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/reset_ack" type="logic">
+      <obj_property name="ElementShortName">reset_ack</obj_property>
+      <obj_property name="ObjectShortName">reset_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDC/filter_reset_out" type="logic">
+      <obj_property name="ElementShortName">filter_reset_out</obj_property>
+      <obj_property name="ObjectShortName">filter_reset_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <wvobject fp_name="/tb_CDC/FPGA_CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">FPGA_CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">FPGA_CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_CDC/ADC_CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">ADC_CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">ADC_CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_CDC/FIFO_COUNTER_WIDTH" type="other">
+         <obj_property name="ElementShortName">FIFO_COUNTER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_COUNTER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_CDC/FIFO_DEPTH" type="other">
+         <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_CDC/MERGED_PARAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">MERGED_PARAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">MERGED_PARAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_CDC/FRAME_WIDTH" type="other">
+         <obj_property name="ElementShortName">FRAME_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FRAME_WIDTH</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

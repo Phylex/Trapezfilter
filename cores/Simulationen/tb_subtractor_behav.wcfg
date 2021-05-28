@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_subtractor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_subtractor" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="100000001fs"></ZoomEndTime>
+      <Cursor1Time time="20000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_subtractor/in_sig" type="array">
+      <obj_property name="ElementShortName">in_sig[13:0]</obj_property>
+      <obj_property name="ObjectShortName">in_sig[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider51">
+      <obj_property name="label">Subtractor signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#00FF00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/syncd_in" type="array">
+      <obj_property name="ElementShortName">syncd_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in[13:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/sel" type="other">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dlyd_sig" type="array">
+      <obj_property name="ElementShortName">dlyd_sig[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dlyd_sig[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/sub_sig" type="array">
+      <obj_property name="ElementShortName">sub_sig[13:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_sig[13:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider52">
+      <obj_property name="label">Delay Buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#008080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[13:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/dbfr" type="array">
+      <obj_property name="ElementShortName">dbfr[0:19][13:0]</obj_property>
+      <obj_property name="ObjectShortName">dbfr[0:19][13:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[13:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/sel" type="other">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider210">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#A0A0A4</obj_property>
+   </wvobject>
+   <wvobject fp_name="group225" type="group">
+      <obj_property name="label">constant</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_subtractor/RST_HOLD_DURATION" type="other">
+         <obj_property name="ElementShortName">RST_HOLD_DURATION</obj_property>
+         <obj_property name="ObjectShortName">RST_HOLD_DURATION</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/line_width" type="other">
+         <obj_property name="ElementShortName">line_width</obj_property>
+         <obj_property name="ObjectShortName">line_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/buffer_depth" type="other">
+         <obj_property name="ElementShortName">buffer_depth</obj_property>
+         <obj_property name="ObjectShortName">buffer_depth</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/word_width" type="other">
+         <obj_property name="ElementShortName">word_width</obj_property>
+         <obj_property name="ObjectShortName">word_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/synth_buffer_depth" type="other">
+         <obj_property name="ElementShortName">synth_buffer_depth</obj_property>
+         <obj_property name="ObjectShortName">synth_buffer_depth</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_subtractor/subtractor_inst/dly_buffer/word_width" type="other">
+         <obj_property name="ElementShortName">word_width</obj_property>
+         <obj_property name="ObjectShortName">word_width</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_MB_signal_filter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="filtertypes" />
+            <top_module name="glbl" />
+            <top_module name="tb_MB_signal_filter" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1833370000fs"></ZoomStartTime>
+      <ZoomEndTime time="12833370001fs"></ZoomEndTime>
+      <Cursor1Time time="812000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="221"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="divider" fp_name="divider195">
+      <obj_property name="label">Reset Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MB_signal_filter/s01_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">s01_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s01_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider196">
+      <obj_property name="label">Clock signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MB_signal_filter/s01_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s01_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s01_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MB_signal_filter/adc_clk_a" type="logic">
+      <obj_property name="ElementShortName">adc_clk_a</obj_property>
+      <obj_property name="ObjectShortName">adc_clk_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MB_signal_filter/adc_clk_b" type="logic">
+      <obj_property name="ElementShortName">adc_clk_b</obj_property>
+      <obj_property name="ObjectShortName">adc_clk_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="group648" type="group">
+      <obj_property name="label">ADC Interace</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_MB_signal_filter/adc_data_a" type="array">
+         <obj_property name="ElementShortName">adc_data_a[13:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_a[13:0]</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/adc_data_b" type="array">
+         <obj_property name="ElementShortName">adc_data_b[13:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_data_b[13:0]</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider197">
+         <obj_property name="label">Ticks</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/cycle_tick" type="logic">
+         <obj_property name="ElementShortName">cycle_tick</obj_property>
+         <obj_property name="ObjectShortName">cycle_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/speed_tick" type="logic">
+         <obj_property name="ElementShortName">speed_tick</obj_property>
+         <obj_property name="ObjectShortName">speed_tick</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group836" type="group">
+      <obj_property name="label">AXI PS interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider255">
+         <obj_property name="label">AXI PS Interface</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="group646" type="group">
+         <obj_property name="label">Write Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="divider" fp_name="divider256">
+            <obj_property name="label">Write Channel</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_awaddr" type="array">
+            <obj_property name="ElementShortName">s01_axi_awaddr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_awaddr[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_awprot" type="array">
+            <obj_property name="ElementShortName">s01_axi_awprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_awprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_awvalid" type="logic">
+            <obj_property name="ElementShortName">s01_axi_awvalid</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_awvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_awready" type="logic">
+            <obj_property name="ElementShortName">s01_axi_awready</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_awready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_wdata" type="array">
+            <obj_property name="ElementShortName">s01_axi_wdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_wdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_wstrb" type="array">
+            <obj_property name="ElementShortName">s01_axi_wstrb[3:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_wstrb[3:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_wvalid" type="logic">
+            <obj_property name="ElementShortName">s01_axi_wvalid</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_wvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_wready" type="logic">
+            <obj_property name="ElementShortName">s01_axi_wready</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_wready</obj_property>
+         </wvobject>
+         <wvobject type="divider" fp_name="divider257">
+            <obj_property name="label">Write response</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_bresp" type="array">
+            <obj_property name="ElementShortName">s01_axi_bresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_bresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_bvalid" type="logic">
+            <obj_property name="ElementShortName">s01_axi_bvalid</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_bvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_bready" type="logic">
+            <obj_property name="ElementShortName">s01_axi_bready</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_bready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group647" type="group">
+         <obj_property name="label">Read Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="divider" fp_name="divider258">
+            <obj_property name="label">Read Channel</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_arprot" type="array">
+            <obj_property name="ElementShortName">s01_axi_arprot[2:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_arprot[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_araddr" type="array">
+            <obj_property name="ElementShortName">s01_axi_araddr[4:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_araddr[4:0]</obj_property>
+            <obj_property name="Radix">BINARYRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_arvalid" type="logic">
+            <obj_property name="ElementShortName">s01_axi_arvalid</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_arvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_arready" type="logic">
+            <obj_property name="ElementShortName">s01_axi_arready</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_arready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_rdata" type="array">
+            <obj_property name="ElementShortName">s01_axi_rdata[31:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_rdata[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_rresp" type="array">
+            <obj_property name="ElementShortName">s01_axi_rresp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_rresp[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_rvalid" type="logic">
+            <obj_property name="ElementShortName">s01_axi_rvalid</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_rvalid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/s01_axi_rready" type="logic">
+            <obj_property name="ElementShortName">s01_axi_rready</obj_property>
+            <obj_property name="ObjectShortName">s01_axi_rready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group645" type="group">
+         <obj_property name="label">AXI PS interface output</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="divider" fp_name="divider259">
+            <obj_property name="label">AXI PS interface output</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/AXI_PS_inteface_logic/parameter_extraction/merged_params" type="array">
+            <obj_property name="ElementShortName">merged_params[61:0]</obj_property>
+            <obj_property name="ObjectShortName">merged_params[61:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/AXI_PS_inteface_logic/parameter_extraction/param_updated" type="logic">
+            <obj_property name="ElementShortName">param_updated</obj_property>
+            <obj_property name="ObjectShortName">param_updated</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/AXI_PS_inteface_logic/parameter_extraction/param_valid" type="logic">
+            <obj_property name="ElementShortName">param_valid</obj_property>
+            <obj_property name="ObjectShortName">param_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/AXI_PS_inteface_logic/system_rst" type="logic">
+            <obj_property name="ElementShortName">system_rst</obj_property>
+            <obj_property name="ObjectShortName">system_rst</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group644" type="group">
+      <obj_property name="label">Filter Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider270">
+         <obj_property name="label">Filter Control</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/Filter_control/filter_state_out" type="array">
+         <obj_property name="ElementShortName">filter_state_out[2:0]</obj_property>
+         <obj_property name="ObjectShortName">filter_state_out[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/Filter_control/filter_state" type="other">
+         <obj_property name="ElementShortName">filter_state</obj_property>
+         <obj_property name="ObjectShortName">filter_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/fifo_fill" type="array">
+         <obj_property name="ElementShortName">fifo_fill[11:0]</obj_property>
+         <obj_property name="ObjectShortName">fifo_fill[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group643" type="group">
+      <obj_property name="label">Parameters</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="divider" fp_name="divider388">
+         <obj_property name="label">Unpack Parameters</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/adc_sel" type="logic">
+         <obj_property name="ElementShortName">adc_sel</obj_property>
+         <obj_property name="ObjectShortName">adc_sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/k" type="array">
+         <obj_property name="ElementShortName">k[6:0]</obj_property>
+         <obj_property name="ObjectShortName">k[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/l" type="array">
+         <obj_property name="ElementShortName">l[6:0]</obj_property>
+         <obj_property name="ObjectShortName">l[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/m" type="array">
+         <obj_property name="ElementShortName">m[10:0]</obj_property>
+         <obj_property name="ObjectShortName">m[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/peak_filter_thresh" type="array">
+         <obj_property name="ElementShortName">peak_filter_thresh[27:0]</obj_property>
+         <obj_property name="ObjectShortName">peak_filter_thresh[27:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/unpack_prarmeters_from_cdc/event_filter_accum_time" type="array">
+         <obj_property name="ElementShortName">event_filter_accum_time[7:0]</obj_property>
+         <obj_property name="ObjectShortName">event_filter_accum_time[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group642" type="group">
+      <obj_property name="label">Signal Filter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="divider" fp_name="divider282">
+         <obj_property name="label">Signal Filter</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/signal_filter/filtered_signal" type="array">
+         <obj_property name="ElementShortName">filtered_signal[27:0]</obj_property>
+         <obj_property name="ObjectShortName">filtered_signal[27:0]</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+         <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+         <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+         <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+         <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+         <obj_property name="AnalogHorizLine">0.000000</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/signal_filter/event_out" type="array">
+         <obj_property name="ElementShortName">event_out[95:0]</obj_property>
+         <obj_property name="ObjectShortName">event_out[95:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/MB_sim_signal_filter_inst/signal_filter/event_out_flag" type="logic">
+         <obj_property name="ElementShortName">event_out_flag</obj_property>
+         <obj_property name="ObjectShortName">event_out_flag</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group194" type="group">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_MB_signal_filter/line_width" type="other">
+         <obj_property name="ElementShortName">line_width</obj_property>
+         <obj_property name="ObjectShortName">line_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/FPGA_CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">FPGA_CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">FPGA_CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/ADC_CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">ADC_CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">ADC_CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/C_S01_AXI_ADDR_WIDTH" type="other">
+         <obj_property name="ElementShortName">C_S01_AXI_ADDR_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">C_S01_AXI_ADDR_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/C_S01_AXI_DATA_WIDTH" type="other">
+         <obj_property name="ElementShortName">C_S01_AXI_DATA_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">C_S01_AXI_DATA_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/EVENT_TIMER_WIDTH" type="other">
+         <obj_property name="ElementShortName">EVENT_TIMER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">EVENT_TIMER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/EVENT_FILTER_DEPTH" type="other">
+         <obj_property name="ElementShortName">EVENT_FILTER_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">EVENT_FILTER_DEPTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/TIMER_WIDTH" type="other">
+         <obj_property name="ElementShortName">TIMER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">TIMER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/CYCLE_COUNTER_WIDTH" type="other">
+         <obj_property name="ElementShortName">CYCLE_COUNTER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">CYCLE_COUNTER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/SPEED_COUNTER_WIDTH" type="other">
+         <obj_property name="ElementShortName">SPEED_COUNTER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">SPEED_COUNTER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/ACTIME_WIDTH" type="other">
+         <obj_property name="ElementShortName">ACTIME_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">ACTIME_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/FILTER_STATUS_WIDTH" type="other">
+         <obj_property name="ElementShortName">FILTER_STATUS_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FILTER_STATUS_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/ACCUM_EXT" type="other">
+         <obj_property name="ElementShortName">ACCUM_EXT</obj_property>
+         <obj_property name="ObjectShortName">ACCUM_EXT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/M_PARAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">M_PARAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">M_PARAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/TF_DELAY_DEPTH" type="other">
+         <obj_property name="ElementShortName">TF_DELAY_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">TF_DELAY_DEPTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/KL_PARAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">KL_PARAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">KL_PARAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/FIFO_COUNTER_WIDTH" type="other">
+         <obj_property name="ElementShortName">FIFO_COUNTER_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_COUNTER_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/FIFO_DEPTH" type="other">
+         <obj_property name="ElementShortName">FIFO_DEPTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DEPTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/LED_COUNT" type="other">
+         <obj_property name="ElementShortName">LED_COUNT</obj_property>
+         <obj_property name="ObjectShortName">LED_COUNT</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_MB_signal_filter/ADC_SIGNAL_WIDTH" type="other">
+         <obj_property name="ElementShortName">ADC_SIGNAL_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">ADC_SIGNAL_WIDTH</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group837" type="group">
+      <obj_property name="label">CDC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MB_signal_filter/frame" type="array">
+      <obj_property name="ElementShortName">frame[95:0]</obj_property>
+      <obj_property name="ObjectShortName">frame[95:0]</obj_property>
+   </wvobject>
+</wave_config>

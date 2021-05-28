@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_trapezoidal_filter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_trapezoidal_filter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2400000001fs"></ZoomEndTime>
+      <Cursor1Time time="1068000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="44" />
+   <wvobject type="divider" fp_name="divider735">
+      <obj_property name="label">Filter Parameter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group350" type="group">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_trapezoidal_filter/line_width" type="other">
+         <obj_property name="ElementShortName">line_width</obj_property>
+         <obj_property name="ObjectShortName">line_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/RST_HOLD_DURATION" type="other">
+         <obj_property name="ElementShortName">RST_HOLD_DURATION</obj_property>
+         <obj_property name="ObjectShortName">RST_HOLD_DURATION</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/max_multiplier_word_width" type="other">
+         <obj_property name="ElementShortName">max_multiplier_word_width</obj_property>
+         <obj_property name="ObjectShortName">max_multiplier_word_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/buffer_length" type="other">
+         <obj_property name="ElementShortName">buffer_length</obj_property>
+         <obj_property name="ObjectShortName">buffer_length</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/word_width" type="other">
+         <obj_property name="ElementShortName">word_width</obj_property>
+         <obj_property name="ObjectShortName">word_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/m" type="array">
+         <obj_property name="ElementShortName">m[10:0]</obj_property>
+         <obj_property name="ObjectShortName">m[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/l" type="other">
+         <obj_property name="ElementShortName">l</obj_property>
+         <obj_property name="ObjectShortName">l</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_trapezoidal_filter/k" type="other">
+         <obj_property name="ElementShortName">k</obj_property>
+         <obj_property name="ObjectShortName">k</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider736">
+      <obj_property name="label">Global Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[26:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider360">
+      <obj_property name="label">dkl_calc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_1/syncd_in" type="array">
+      <obj_property name="ElementShortName">syncd_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_1/dlyd_sig" type="array">
+      <obj_property name="ElementShortName">dlyd_sig[14:0]</obj_property>
+      <obj_property name="ObjectShortName">dlyd_sig[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/sub_1_out" type="array">
+      <obj_property name="ElementShortName">sub_1_out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_1_out[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_2/syncd_in" type="array">
+      <obj_property name="ElementShortName">syncd_in[14:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_2/dlyd_sig" type="array">
+      <obj_property name="ElementShortName">dlyd_sig[14:0]</obj_property>
+      <obj_property name="ObjectShortName">dlyd_sig[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_2/sub_sig" type="array">
+      <obj_property name="ElementShortName">sub_sig[14:0]</obj_property>
+      <obj_property name="ObjectShortName">sub_sig[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/input_word_width" type="other">
+      <obj_property name="ElementShortName">input_word_width</obj_property>
+      <obj_property name="ObjectShortName">input_word_width</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/kplusl" type="other">
+      <obj_property name="ElementShortName">kplusl</obj_property>
+      <obj_property name="ObjectShortName">kplusl</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider384">
+      <obj_property name="label">Multiplier and Accum 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/multiplier/in_1" type="array">
+      <obj_property name="ElementShortName">in_1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">in_1[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/multiplier/in_2" type="array">
+      <obj_property name="ElementShortName">in_2[10:0]</obj_property>
+      <obj_property name="ObjectShortName">in_2[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/multiplier/mul_out" type="array">
+      <obj_property name="ElementShortName">mul_out[25:0]</obj_property>
+      <obj_property name="ObjectShortName">mul_out[25:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/multiplier/syncd_in_1" type="array">
+      <obj_property name="ElementShortName">syncd_in_1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in_1[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/multiplier/syncd_in_2" type="array">
+      <obj_property name="ElementShortName">syncd_in_2[10:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in_2[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider425">
+      <obj_property name="label">Accumulator 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_1/syncd_in" type="array">
+      <obj_property name="ElementShortName">syncd_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_1/dlyd_sig" type="array">
+      <obj_property name="ElementShortName">dlyd_sig[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dlyd_sig[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_1/acc_sig" type="array">
+      <obj_property name="ElementShortName">acc_sig[15:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_sig[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="CustomSignalColor">#00FF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_1/bounded_acc" type="array">
+      <obj_property name="ElementShortName">bounded_acc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bounded_acc[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider426">
+      <obj_property name="label">Adder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/adder/in_1" type="array">
+      <obj_property name="ElementShortName">in_1[25:0]</obj_property>
+      <obj_property name="ObjectShortName">in_1[25:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/adder/in_2" type="array">
+      <obj_property name="ElementShortName">in_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_2[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/adder/add_out" type="array">
+      <obj_property name="ElementShortName">add_out[26:0]</obj_property>
+      <obj_property name="ObjectShortName">add_out[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/adder/syncd_in_1" type="array">
+      <obj_property name="ElementShortName">syncd_in_1[25:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in_1[25:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/adder/syncd_in_2" type="array">
+      <obj_property name="ElementShortName">syncd_in_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in_2[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider435">
+      <obj_property name="label">Accumulator 2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/in_sig" type="array">
+      <obj_property name="ElementShortName">in_sig[26:0]</obj_property>
+      <obj_property name="ObjectShortName">in_sig[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/acc_sig" type="array">
+      <obj_property name="ElementShortName">acc_sig[26:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_sig[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/dlyd_sig" type="array">
+      <obj_property name="ElementShortName">dlyd_sig[26:0]</obj_property>
+      <obj_property name="ObjectShortName">dlyd_sig[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/add_res" type="array">
+      <obj_property name="ElementShortName">add_res[27:0]</obj_property>
+      <obj_property name="ObjectShortName">add_res[27:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/bound" type="array">
+      <obj_property name="ElementShortName">bound[26:0]</obj_property>
+      <obj_property name="ObjectShortName">bound[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/syncd_in" type="array">
+      <obj_property name="ElementShortName">syncd_in[26:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/accumulator_2/bounded_acc" type="array">
+      <obj_property name="ElementShortName">bounded_acc[26:0]</obj_property>
+      <obj_property name="ObjectShortName">bounded_acc[26:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_trapezoidal_filter/trapezoidal_filter_inst/dkl_calc_inst/subtractor_2/in_sig" type="array">
+      <obj_property name="ElementShortName">in_sig[14:0]</obj_property>
+      <obj_property name="ObjectShortName">in_sig[14:0]</obj_property>
+   </wvobject>
+</wave_config>

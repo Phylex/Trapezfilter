@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_CDCrosser_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_CDCrosser" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="254313100fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_CDCrosser/sender_clk" type="logic">
+      <obj_property name="ElementShortName">sender_clk</obj_property>
+      <obj_property name="ObjectShortName">sender_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/CDCrosser_inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/reciever_clk" type="logic">
+      <obj_property name="ElementShortName">reciever_clk</obj_property>
+      <obj_property name="ObjectShortName">reciever_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/din" type="array">
+      <obj_property name="ElementShortName">din[9:0]</obj_property>
+      <obj_property name="ObjectShortName">din[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/valid_strobe" type="logic">
+      <obj_property name="ElementShortName">valid_strobe</obj_property>
+      <obj_property name="ObjectShortName">valid_strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/CDCrosser_inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/CDCrosser_inst/valid_1" type="logic">
+      <obj_property name="ElementShortName">valid_1</obj_property>
+      <obj_property name="ObjectShortName">valid_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/CDCrosser_inst/ack" type="logic">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/CDCrosser_inst/ack_1" type="logic">
+      <obj_property name="ElementShortName">ack_1</obj_property>
+      <obj_property name="ObjectShortName">ack_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/transfered" type="logic">
+      <obj_property name="ElementShortName">transfered</obj_property>
+      <obj_property name="ObjectShortName">transfered</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/dout" type="array">
+      <obj_property name="ElementShortName">dout[9:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/DATA_WIDTH" type="other">
+      <obj_property name="ElementShortName">DATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/SENDER_CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">SENDER_CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">SENDER_CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_CDCrosser/RECIEVER_CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">RECIEVER_CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">RECIEVER_CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_axis_adc_interface_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_axis_adc_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4640233618fs"></ZoomStartTime>
+      <ZoomEndTime time="5518353277fs"></ZoomEndTime>
+      <Cursor1Time time="5372000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_axis_adc_interface/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/raw_signal" type="array">
+      <obj_property name="ElementShortName">raw_signal[13:0]</obj_property>
+      <obj_property name="ObjectShortName">raw_signal[13:0]</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/adc_sel" type="logic">
+      <obj_property name="ElementShortName">adc_sel</obj_property>
+      <obj_property name="ObjectShortName">adc_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_TSTRB" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/S_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/RAW_SIGNAL_WIDTH" type="other">
+      <obj_property name="ElementShortName">RAW_SIGNAL_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">RAW_SIGNAL_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/C_S_AXIS_TDATA_WIDTH" type="other">
+      <obj_property name="ElementShortName">C_S_AXIS_TDATA_WIDTH</obj_property>
+      <obj_property name="ObjectShortName">C_S_AXIS_TDATA_WIDTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/line_width" type="other">
+      <obj_property name="ElementShortName">line_width</obj_property>
+      <obj_property name="ObjectShortName">line_width</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_axis_adc_interface/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>

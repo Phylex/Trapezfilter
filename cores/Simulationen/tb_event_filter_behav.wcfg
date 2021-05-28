@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_event_filter_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_event_filter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="622888219fs"></ZoomEndTime>
+      <Cursor1Time time="156133000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="161"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="divider" fp_name="divider43">
+      <obj_property name="label">Outside signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#00FF00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_in_flag" type="logic">
+      <obj_property name="ElementShortName">event_in_flag</obj_property>
+      <obj_property name="ObjectShortName">event_in_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/in_event" type="array">
+      <obj_property name="ElementShortName">in_event[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_event[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_out_flag" type="logic">
+      <obj_property name="ElementShortName">event_out_flag</obj_property>
+      <obj_property name="ObjectShortName">event_out_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/out_event" type="array">
+      <obj_property name="ElementShortName">out_event[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_event[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider44">
+      <obj_property name="label">Event Filter Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#0000FF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/in_event" type="array">
+      <obj_property name="ElementShortName">in_event[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_event[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/syncd_in_event" type="array">
+      <obj_property name="ElementShortName">syncd_in_event[7:0]</obj_property>
+      <obj_property name="ObjectShortName">syncd_in_event[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/event_in_flag" type="logic">
+      <obj_property name="ElementShortName">event_in_flag</obj_property>
+      <obj_property name="ObjectShortName">event_in_flag</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/syncd_event_in_flag" type="logic">
+      <obj_property name="ElementShortName">syncd_event_in_flag</obj_property>
+      <obj_property name="ObjectShortName">syncd_event_in_flag</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/event_out_flag" type="logic">
+      <obj_property name="ElementShortName">event_out_flag</obj_property>
+      <obj_property name="ObjectShortName">event_out_flag</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/out_event" type="array">
+      <obj_property name="ElementShortName">out_event[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_event[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider52">
+      <obj_property name="label">Timer Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FF00FF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/totzeit_timer/timer_val" type="array">
+      <obj_property name="ElementShortName">timer_val[9:0]</obj_property>
+      <obj_property name="ObjectShortName">timer_val[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/timer_reached_zero" type="logic">
+      <obj_property name="ElementShortName">timer_reached_zero</obj_property>
+      <obj_property name="ObjectShortName">timer_reached_zero</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/timer_reset" type="logic">
+      <obj_property name="ElementShortName">timer_reset</obj_property>
+      <obj_property name="ObjectShortName">timer_reset</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/timer_reset_enable" type="logic">
+      <obj_property name="ElementShortName">timer_reset_enable</obj_property>
+      <obj_property name="ObjectShortName">timer_reset_enable</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider55">
+      <obj_property name="label">Buffer Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#800080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/buffer_reset" type="logic">
+      <obj_property name="ElementShortName">buffer_reset</obj_property>
+      <obj_property name="ObjectShortName">buffer_reset</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/buffer_shift" type="logic">
+      <obj_property name="ElementShortName">buffer_shift</obj_property>
+      <obj_property name="ObjectShortName">buffer_shift</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/packet_in" type="array">
+      <obj_property name="ElementShortName">packet_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_in[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/max_packet" type="array">
+      <obj_property name="ElementShortName">max_packet[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_packet[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr" type="array">
+      <obj_property name="ElementShortName">pbfr[0:4][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pbfr[0:4][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr[0]" type="array">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr[1]" type="array">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr[2]" type="array">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr[3]" type="array">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/event_filter_inst/max_array/pbfr[4]" type="array">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#800080</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider33">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#A0A0A4</obj_property>
+   </wvobject>
+   <wvobject fp_name="group42" type="group">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_event_filter/packet_width" type="other">
+         <obj_property name="ElementShortName">packet_width</obj_property>
+         <obj_property name="ObjectShortName">packet_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/RST_HOLD_DURATION" type="other">
+         <obj_property name="ElementShortName">RST_HOLD_DURATION</obj_property>
+         <obj_property name="ObjectShortName">RST_HOLD_DURATION</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/totzeit" type="array">
+         <obj_property name="ElementShortName">totzeit[9:0]</obj_property>
+         <obj_property name="ObjectShortName">totzeit[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/buffer_depth" type="other">
+         <obj_property name="ElementShortName">buffer_depth</obj_property>
+         <obj_property name="ObjectShortName">buffer_depth</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/timer_width" type="other">
+         <obj_property name="ElementShortName">timer_width</obj_property>
+         <obj_property name="ObjectShortName">timer_width</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/SHIFT_PERIOD" type="other">
+         <obj_property name="ElementShortName">SHIFT_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">SHIFT_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_event_filter/CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

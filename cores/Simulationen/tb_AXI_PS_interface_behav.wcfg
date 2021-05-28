@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AXI_PS_interface_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="filtertypes" />
+            <top_module name="glbl" />
+            <top_module name="tb_AXI_PS_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="875870647fs"></ZoomEndTime>
+      <Cursor1Time time="612000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="220"></NameColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb_AXI_PS_interface/frame" type="array">
+      <obj_property name="ElementShortName">frame[95:0]</obj_property>
+      <obj_property name="ObjectShortName">frame[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/fifo_rd_en" type="logic">
+      <obj_property name="ElementShortName">fifo_rd_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/fifo_cnt" type="array">
+      <obj_property name="ElementShortName">fifo_cnt[10:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_cnt[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/filter_status" type="array">
+      <obj_property name="ElementShortName">filter_status[2:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_status[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/param_valid" type="logic">
+      <obj_property name="ElementShortName">param_valid</obj_property>
+      <obj_property name="ObjectShortName">param_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/param_updated" type="logic">
+      <obj_property name="ElementShortName">param_updated</obj_property>
+      <obj_property name="ObjectShortName">param_updated</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/merged_parameters" type="array">
+      <obj_property name="ElementShortName">merged_parameters[61:0]</obj_property>
+      <obj_property name="ObjectShortName">merged_parameters[61:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/fpga_clk" type="logic">
+      <obj_property name="ElementShortName">fpga_clk</obj_property>
+      <obj_property name="ObjectShortName">fpga_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/system_rst" type="logic">
+      <obj_property name="ElementShortName">system_rst</obj_property>
+      <obj_property name="ObjectShortName">system_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">s_axi_awaddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_awprot" type="array">
+      <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_awready" type="logic">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_wdata" type="array">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_wstrb" type="array">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_wready" type="logic">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_bresp" type="array">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_bready" type="logic">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_araddr" type="array">
+      <obj_property name="ElementShortName">s_axi_araddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_arprot" type="array">
+      <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_arready" type="logic">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_rdata" type="array">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_rresp" type="array">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/s_axi_rready" type="logic">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/AXI_PS_interface_inst/param_reg_0" type="array">
+      <obj_property name="ElementShortName">param_reg_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">param_reg_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/AXI_PS_interface_inst/param_reg_1" type="array">
+      <obj_property name="ElementShortName">param_reg_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">param_reg_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/AXI_PS_interface_inst/param_reg_2" type="array">
+      <obj_property name="ElementShortName">param_reg_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">param_reg_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/ps_reset" type="logic">
+      <obj_property name="ElementShortName">ps_reset</obj_property>
+      <obj_property name="ObjectShortName">ps_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/AXI_PS_interface_inst/parameter_extraction/param_valid" type="logic">
+      <obj_property name="ElementShortName">param_valid</obj_property>
+      <obj_property name="ObjectShortName">param_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXI_PS_interface/AXI_PS_interface_inst/parameter_extraction/param_updated" type="logic">
+      <obj_property name="ElementShortName">param_updated</obj_property>
+      <obj_property name="ObjectShortName">param_updated</obj_property>
+   </wvobject>
+   <wvobject fp_name="group76" type="group">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_AXI_PS_interface/CLK_PERIOD" type="other">
+         <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/C_S_AXI_ADDR_WIDTH" type="other">
+         <obj_property name="ElementShortName">C_S_AXI_ADDR_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">C_S_AXI_ADDR_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/C_S_AXI_DATA_WIDTH" type="other">
+         <obj_property name="ElementShortName">C_S_AXI_DATA_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">C_S_AXI_DATA_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/ACTIME_WIDTH" type="other">
+         <obj_property name="ElementShortName">ACTIME_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">ACTIME_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/PTHRESH_WIDTH" type="other">
+         <obj_property name="ElementShortName">PTHRESH_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">PTHRESH_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/M_PARAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">M_PARAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">M_PARAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/KL_PARAM_WIDTH" type="other">
+         <obj_property name="ElementShortName">KL_PARAM_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">KL_PARAM_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/FILTER_STATUS_WIDTH" type="other">
+         <obj_property name="ElementShortName">FILTER_STATUS_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FILTER_STATUS_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/FIFO_CNT_WIDTH" type="other">
+         <obj_property name="ElementShortName">FIFO_CNT_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FIFO_CNT_WIDTH</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXI_PS_interface/FRAME_WIDTH" type="other">
+         <obj_property name="ElementShortName">FRAME_WIDTH</obj_property>
+         <obj_property name="ObjectShortName">FRAME_WIDTH</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
