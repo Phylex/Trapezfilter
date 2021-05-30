@@ -100,7 +100,7 @@ begin
     variable space: character;
   begin
     -- read in the filter parameters from the file containing them and the input signal
-    file_open(input_file_param, "C:\Users\Alexander\Documents\Uni\Bachelorarbeit\Testdaten\tests\MB_filter_parameter.txt", read_mode);
+    file_open(input_file_param, "/home/nabla/Trapezfilter/testutils/MB_sim_params.txt", read_mode);
     readline(input_file_param, in_line);
     read(in_line, k);
     readline(input_file_param, in_line);
@@ -300,7 +300,7 @@ begin
     wait until rising_edge(s01_axi_aclk);
     s01_axi_bready <= '0';
 
-    wait for 30000 ns;
+    wait for 3000 us;
 
     ps_reset_reg := std_logic_vector(to_unsigned(1, C_S01_AXI_DATA_WIDTH));
 
@@ -340,7 +340,7 @@ begin
     variable space: character;
     variable conversion : std_logic_vector(0 downto 0);
   begin
-    file_open(input_file_signal, "C:\Users\Alexander\Documents\Uni\Bachelorarbeit\Testdaten\tests\MB_filter_signal.txt", read_mode);
+    file_open(input_file_signal, "/home/nabla/Trapezfilter/testutils/MB_sim_signal.txt", read_mode);
     while not endfile(input_file_signal) loop
       wait until rising_edge(adc_clk_a);
       readline(input_file_signal, in_line);

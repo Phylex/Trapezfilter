@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 library work;
 use work.filtertypes.all;
 
-entity MB_signal_filter is
+entity MB_sim_signal_filter is
 	generic (
     ADC_SIGNAL_WIDTH : integer := adc_input_width;
     LED_COUNT : integer := 4;
@@ -27,8 +27,8 @@ entity MB_signal_filter is
     EVENT_TIMER_WIDTH: natural := event_filter_timer_width;
 
 		-- Parameters of Axi Slave Bus Interface S01_AXI
-		C_S01_AXI_DATA_WIDTH	: integer := axi_4l_register_width;
-		C_S01_AXI_ADDR_WIDTH	: integer := axi_addr_width
+	C_S01_AXI_DATA_WIDTH	: integer := axi_4l_register_width;
+	C_S01_AXI_ADDR_WIDTH	: integer := axi_addr_width
 	);
 	port (
     -- inputs from the cycle and speed tick
@@ -46,31 +46,31 @@ entity MB_signal_filter is
     adc_csn: out std_logic;
 		
 		-- Ports of Axi Slave Bus Interface S01_AXI
-		s01_axi_aclk	: in std_logic;
-		s01_axi_aresetn	: in std_logic;
-		s01_axi_awaddr	: in std_logic_vector(C_S01_AXI_ADDR_WIDTH-1 downto 0);
-		s01_axi_awprot	: in std_logic_vector(2 downto 0);
-		s01_axi_awvalid	: in std_logic;
-		s01_axi_awready	: out std_logic;
-		s01_axi_wdata	: in std_logic_vector(C_S01_AXI_DATA_WIDTH-1 downto 0);
-		s01_axi_wstrb	: in std_logic_vector((C_S01_AXI_DATA_WIDTH/8)-1 downto 0);
-		s01_axi_wvalid	: in std_logic;
-		s01_axi_wready	: out std_logic;
-		s01_axi_bresp	: out std_logic_vector(1 downto 0);
-		s01_axi_bvalid	: out std_logic;
-		s01_axi_bready	: in std_logic;
-		s01_axi_araddr	: in std_logic_vector(C_S01_AXI_ADDR_WIDTH-1 downto 0);
-		s01_axi_arprot	: in std_logic_vector(2 downto 0);
-		s01_axi_arvalid	: in std_logic;
-		s01_axi_arready	: out std_logic;
-		s01_axi_rdata	: out std_logic_vector(C_S01_AXI_DATA_WIDTH-1 downto 0);
-		s01_axi_rresp	: out std_logic_vector(1 downto 0);
-		s01_axi_rvalid	: out std_logic;
-		s01_axi_rready	: in std_logic
+	s01_axi_aclk	: in std_logic;
+	s01_axi_aresetn	: in std_logic;
+	s01_axi_awaddr	: in std_logic_vector(C_S01_AXI_ADDR_WIDTH-1 downto 0);
+	s01_axi_awprot	: in std_logic_vector(2 downto 0);
+	s01_axi_awvalid	: in std_logic;
+	s01_axi_awready	: out std_logic;
+	s01_axi_wdata	: in std_logic_vector(C_S01_AXI_DATA_WIDTH-1 downto 0);
+	s01_axi_wstrb	: in std_logic_vector((C_S01_AXI_DATA_WIDTH/8)-1 downto 0);
+	s01_axi_wvalid	: in std_logic;
+	s01_axi_wready	: out std_logic;
+	s01_axi_bresp	: out std_logic_vector(1 downto 0);
+	s01_axi_bvalid	: out std_logic;
+	s01_axi_bready	: in std_logic;
+	s01_axi_araddr	: in std_logic_vector(C_S01_AXI_ADDR_WIDTH-1 downto 0);
+	s01_axi_arprot	: in std_logic_vector(2 downto 0);
+	s01_axi_arvalid	: in std_logic;
+	s01_axi_arready	: out std_logic;
+	s01_axi_rdata	: out std_logic_vector(C_S01_AXI_DATA_WIDTH-1 downto 0);
+	s01_axi_rresp	: out std_logic_vector(1 downto 0);
+	s01_axi_rvalid	: out std_logic;
+	s01_axi_rready	: in std_logic
 	);
-end MB_signal_filter;
+end MB_sim_signal_filter;
 
-architecture arch_imp of MB_signal_filter is
+architecture arch_imp of MB_sim_signal_filter is
   constant FILTERED_SIGNAL_WIDTH : natural := ADC_SIGNAL_WIDTH + M_PARAM_WIDTH + ACCUM_EXT;
   constant MERGED_PARAM_WIDTH : natural := 1 + 2*KL_PARAM_WIDTH + M_PARAM_WIDTH + FILTERED_SIGNAL_WIDTH + EVENT_TIMER_WIDTH;
   constant FRAME_WIDTH : natural := FILTERED_SIGNAL_WIDTH + SPEED_COUNTER_WIDTH + CYCLE_COUNTER_WIDTH + TIMER_WIDTH;
@@ -122,9 +122,10 @@ architecture arch_imp of MB_signal_filter is
 begin
 
 -- Instantiation of the adc_interface
-adc_interface: entity work.ADC_interface
+adc_interface: entity work.ADC_sim_interface
   generic map (
-    adc_data_width => ADC_SIGNAL_WIDTH
+    adc_data_width => ADC_SIGNAL_WIDTH,
+    downsample_width => 5
   )
   port map (
     clk => filter_clk,
