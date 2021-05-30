@@ -19,7 +19,7 @@ ENTITY trapezoidal_filter is
   Generic(  word_width: natural;
             buffer_length: natural;
             max_multiplier_word_width: natural;
-            param_width: natural;
+            param_width: natural
           );
   Port   (  -- parameters from software
             signal k: in unsigned(param_width-1 downto 0);
