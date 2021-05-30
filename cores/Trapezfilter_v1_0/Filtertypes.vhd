@@ -3,14 +3,14 @@ library IEEE;
   use IEEE.numeric_std.all;
 
 package filtertypes is
-  constant AXI_4L_REGISTER_WIDTH :natural := 32;
+  constant axi_4l_register_width :natural := 32;
   constant axis_data_width : natural := 32;
   constant adc_input_width : integer := 14;
   -- the accumulator has to be a bit bigger as it accumulates the signal over time
-  constant accum_1_ext : integer := 5;
+  constant accum_1_ext : integer := 7;
   constant mul_const_width : integer := 11;
   constant tf_delay_buffer_depth : natural := 128;
-  constant KL_PARAM_WIDTH: natural := 7;
+  constant kl_param_width: natural := 7;
   -- same for the second accumulator as for the first
   constant accum_2_ext: integer := 3;
   constant timer_width : integer := 40;
@@ -24,10 +24,10 @@ package filtertypes is
   constant merged_param_width: natural := event_filter_timer_width + 2*KL_PARAM_WIDTH+ mul_const_width + 1 + filtered_signal_width;
   
   -- constant for the FIFO
-  constant FB_DEPTH :natural := 2048;
-  constant FB_COUNT_WIDTH :natural := 12;
-  constant FB_FULL_WARNING :natural := 900;
-  constant FB_EMPTY_WARNING :natural := 100;
-  constant FILTER_STATUS_WIDTH: natural := 3;
-  constant AXI_ADDR_WIDTH: natural := 5;
+  constant fb_depth :natural := 2048;
+  constant fb_count_width :natural := 12;
+  constant fb_full_warning :natural := 900;
+  constant fb_empty_warning :natural := 100;
+  constant filter_status_width: natural := 3;
+  constant axi_addr_width: natural := 5;
 end package filtertypes;

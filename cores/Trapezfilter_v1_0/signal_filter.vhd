@@ -65,7 +65,6 @@ begin
                 buffer_length => tf_buffer_length,
                 max_multiplier_word_width => tf_max_multiplier_word_width,
                 param_width => KL_PARAM_WIDTH,
-                accum_2_ext => accum_2_extension
     )
     port map (
       clk               => clk,
