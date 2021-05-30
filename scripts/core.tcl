@@ -10,6 +10,7 @@ set version [string trimleft [join [lrange $elements end-1 end] .] v]
 file delete -force tmp/cores/$core_name tmp/cores/$project_name.cache tmp/cores/$project_name.hw tmp/cores/$project_name.xpr tmp/cores/$project_name.sim tmp/cores/$project_name.ip_user_files
 
 create_project -part $part_name $project_name tmp/cores
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 
 # collect all verilog files
 set srcs [glob -nocomplain cores/$core_name/*.v]
