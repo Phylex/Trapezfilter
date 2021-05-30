@@ -1,11 +1,15 @@
 library IEEE;
   use IEEE.std_logic_1164.all;
   use IEEE.numeric_std.all;
+  use IEEE.std_logic_misc.or_reduce;
 
+library unisim;
+  use unisim.vcomponents.all;
 
 entity ADC_interface is
   generic(
-    adc_data_width : natural
+    adc_data_width : natural;
+    downsample_width :natural
   );
   port (
     clk: out  std_logic;
@@ -21,15 +25,24 @@ entity ADC_interface is
 end entity;
 
 architecture rtl of ADC_interface is
+  signal clk_cnt : unsigned(downsample_width-1 downto 0);
+  signal downsampled_clk: std_logic;
   signal int_clk0 : std_logic;
   signal int_clk : std_logic;
-  signal int_adc_dat_a: std_logic_vector(adc_data_width-1 downto 0);
-  signal int_adc_dat_b: std_logic_vector(adc_data_width-1 downto 0);
+  signal reset_acc: std_logic;
+  signal int_adc_dat_a: signed(adc_data_width-1 downto 0);
+  signal int_adc_dat_b: signed(adc_data_width-1 downto 0);
   signal raw_adc_dat_a: std_logic_vector(adc_data_width-1 downto 0);
   signal raw_adc_dat_b: std_logic_vector(adc_data_width-1 downto 0);
+  signal adc_a_acc: signed(adc_data_width+downsample_width-1 downto 0);
+  signal adc_b_acc: signed(adc_data_width+downsample_width-1 downto 0);
+  signal acc_mask: signed(adc_data_width+downsample_width-1 downto 0);
+  signal adc_out_a: std_logic_vector(adc_data_width-1 downto 0);
+  signal adc_out_b: std_logic_vector(adc_data_width-1 downto 0);
   signal syncd_sel : std_logic;
+
 begin
-  adc_clk_in: IBUFGDS
+  adc_clk_in: IBUFDS
     port map (
       I => adc_clk_a,
       IB => adc_clk_b,
@@ -40,22 +53,37 @@ begin
       I => int_clk0,
       O => int_clk
     );
-  
+  reset_acc <= or_reduce(std_logic_vector(clk_cnt));
+  acc_mask <= (others => reset_acc);
   data_sync_in: process (int_clk)
   begin
     if rising_edge(int_clk) then
-	  if rst = '0' then
+      if rst = '0' then
         syncd_sel <= adc_sel;
+        clk_cnt <= clk_cnt + 1;
         raw_adc_dat_a <= adc_data_a;
-	    raw_adc_dat_b <= adc_data_b;
-	    int_adc_dat_a <= raw_adc_dat_a(adc_data_width-1) & (not raw_adc_dat_a(adc_data_width-2 downto 0));
-	    int_adc_dat_b <= raw_adc_dat_b(adc_data_width-1) & (not raw_adc_dat_b(adc_data_width-2 downto 0));
-	  end if;
+        raw_adc_dat_b <= adc_data_b;
+        int_adc_dat_a <= signed(raw_adc_dat_a(adc_data_width-1) & (not raw_adc_dat_a(adc_data_width-2 downto 0)));
+        int_adc_dat_b <= signed(raw_adc_dat_b(adc_data_width-1) & (not raw_adc_dat_b(adc_data_width-2 downto 0)));
+        adc_a_acc <= (adc_a_acc and acc_mask) + int_adc_dat_a;
+        adc_b_acc <= (adc_b_acc and acc_mask) + int_adc_dat_b;
+      end if;
     end if;
   end process;
+
+  average_adc_signals: process(downsampled_clk)
+  begin
+    if rising_edge(downsampled_clk) then
+        adc_out_a <= std_logic_vector(adc_a_acc(adc_data_width+downsample_width-1 downto downsample_width));
+        adc_out_b <= std_logic_vector(adc_b_acc(adc_data_width+downsample_width-1 downto downsample_width));
+    end if;
+  end process;
+
+
   adc_data <= (others => '0') when rst = '1' else
-              int_adc_dat_a when (syncd_sel = '0' and rst = '0') else
-			  int_adc_dat_b when (syncd_sel = '1' and rst = '0');
-  clk <= int_clk;
+              adc_out_a when (syncd_sel = '0' and rst = '0') else
+              adc_out_b when (syncd_sel = '1' and rst = '0');
+  downsampled_clk <= clk_cnt(downsample_width-1);
+  clk <= downsampled_clk;
   adc_csn <= '1';
 end architecture;
