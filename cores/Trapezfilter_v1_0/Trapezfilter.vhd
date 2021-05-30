@@ -101,12 +101,12 @@ BEGIN
   -- resize the output of the accumulator so it can be entered into the adder
   adder: entity work.syncd_adder
     generic map (
-      in1_width => acc1_t'length
-      in2_width => mul_t'length,
+      in1_width => mul_t'length,
+      in2_width => acc1_t'length
     )
     port map (
-      in_1       => b,
-      in_2       => mul_res,
+      in_1       => mul_res,
+      in_2       => b,
       clk        => clk,
       rst        => clr,
       add_out    => c
