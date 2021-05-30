@@ -64,7 +64,7 @@ begin
     generic map (word_width => s_word_width,
                 buffer_length => tf_buffer_length,
                 max_multiplier_word_width => tf_max_multiplier_word_width,
-                param_width => KL_PARAM_WIDTH,
+                param_width => KL_PARAM_WIDTH
     )
     port map (
       clk               => clk,
