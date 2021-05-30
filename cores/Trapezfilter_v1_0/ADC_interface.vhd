@@ -2,6 +2,7 @@ library IEEE;
   use IEEE.std_logic_1164.all;
   use IEEE.numeric_std.all;
   use IEEE.std_logic_misc.or_reduce;
+  use IEEE.std_logic_misc.and_reduce;
 
 library unisim;
   use unisim.vcomponents.all;
@@ -53,14 +54,15 @@ begin
       I => int_clk0,
       O => int_clk
     );
-  reset_acc <= or_reduce(std_logic_vector(clk_cnt));
-  acc_mask <= (others => reset_acc);
+  reset_acc <= clk_cnt(downsample_width-1) and not or_reduce(std_logic_vector(clk_cnt(downsample_width-2 downto 0)));
+  acc_mask <= (others => not reset_acc);
+  
   data_sync_in: process (int_clk)
   begin
     if rising_edge(int_clk) then
+      clk_cnt <= clk_cnt + 1;
       if rst = '0' then
         syncd_sel <= adc_sel;
-        clk_cnt <= clk_cnt + 1;
         raw_adc_dat_a <= adc_data_a;
         raw_adc_dat_b <= adc_data_b;
         int_adc_dat_a <= signed(raw_adc_dat_a(adc_data_width-1) & (not raw_adc_dat_a(adc_data_width-2 downto 0)));
