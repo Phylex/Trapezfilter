@@ -3,13 +3,16 @@ import os
 import sys
 import math
 import matplotlib.pyplot as plt
+import numpy as np
+import bisect
 
 SI_units = ('V', 'A', 'N', 'kg', 'm', 's', 'cd')
 prefixes = {'m': 10**-3, 'd': 10**2, 'u':10**-6, 'n':10**-9, 'p':10**-12, 'k':10**3, 'G': 10**9}
 
 def read_file(filepath):
     '''
-        read in data from the txt files exported by Picoscope
+        read in data from the txt files exported by Picoscope. This function also converts all inputs
+        to SI base units (so from ms -> s, for example)
 
         Args:
           * filepath: string, path to the file containing the data (relative or absolut)
@@ -23,7 +26,7 @@ def read_file(filepath):
         delim=','
     else:
         delim='\t'
-    line1 = f.readline().strip()
+    _ = f.readline().strip()
     line2 = f.readline().strip()
     f.readline()
     units = []
@@ -87,7 +90,41 @@ def average_measurements(data):
         adata[i] = value/len(data)
     return adata
 
-def downsample_data(data, t_col, dt):
+def resample_data(data, t_col, dt):
+    '''
+        resamples the signal to a different time step. This function does not do any interpolation.
+
+        Args:
+            * data: a list of lists that contains the numerical values of a measurement per list element
+            * t_col: the column that contains the timestamp of the measurement
+            * dt: the interval (in seconds) that is to contains one measurement (measurement rate = 1/dt)
+
+        Returns:
+            * ddata: data that is altered to contain one measurement per dt period.
+    '''
+    original_time = np.array([d[t_col] for d in data])
+    t0 = original_time[0]
+    tmax = original_time[-1]
+    delta = tmax-t0
+    num_samples = int(delta/dt)
+    linspace_tmax = t0 + (num_samples * dt)
+    resample_times = np.linspace(t0, linspace_tmax, num_samples)
+    lo_index = 0
+    resampled_data =[]
+    for t in resample_times:
+        index = bisect.bisect_left(original_time, t, lo=lo_index)
+        lo_index = index
+        resampled_entry = []
+        for i, elem in enumerate(data[index]):
+            if i != t_col:
+                resampled_entry.append(elem)
+            else:
+                resampled_entry.append(t)
+        resampled_data.append(resampled_entry)
+    return resampled_data
+
+
+def downsample_data(data, units, t_col, dt):
     '''
         reduces the amount of measurements in the file to one measurement per dt.
         one row of the data (element in the list) represents one measurement.

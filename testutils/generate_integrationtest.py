@@ -10,9 +10,10 @@ if __name__ == "__main__":
     parser.add_argument("paramfile", help="Path to the File that holds the parameters that configure the filter in the simulation")
     parser.add_argument("-b", "--bits",type=int, default=14, help="Define the width of the binary (2's complement) representation of the number")
     parser.add_argument("-r", "--range", type=float, default=20, help="Define the Voltage for which the binary representation reaches the magnitude of 2^(bits-1)-1")
-    parser.add_argument("-k", type=int, default=30, help="set the k filter parameter to a custom value (rise time in clk cycles)")
+    parser.add_argument("-k", type=int, default=50, help="set the k filter parameter to a custom value (rise time in clk cycles)")
     parser.add_argument("-l", type=int, default=100, help="set the l filter parameter to a custom value (l-k is the hold time in clk cycles)")
-    parser.add_argument("-m", type=int, default=500, help="set the m filter parameter to a custom value (m compensates for exponential decay)")
+    parser.add_argument("-m", type=int, default=350, help="set the m filter parameter to a custom value (m compensates for exponential decay)")
+    parser.add_argument("-dt", type=float, default=32*8e-9, help="the clock period of the filter")
     parser.add_argument("-pt", "--peak_threshhold", type=int, default=100000, help="set the minimum peak value so that the peaks registers")
     parser.add_argument("-th", "--timer_hold", type=int, default=100, help="the time that the event filter accumulates events before outputting the max event")
     parser.add_argument("-sf", "--speed_tick_freq", type=int, default=10, help="set the repeat time for the speed tick")
@@ -29,7 +30,8 @@ if __name__ == "__main__":
     else:
         t_col = 0
     fdata = du.remove_time_duplicates(data, t_col)
-    bdata = du.convert_to_binary_word(fdata, t_col, args.bits, args.range)
+    resampled_data = du.resample_data(data, t_col, args.dt)
+    bdata = du.convert_to_binary_word(resampled_data, t_col, args.bits, args.range)
     # create the plot (optional)
     if args.plot is not None:
         figure = du.plot_waveform(bdata, units)
