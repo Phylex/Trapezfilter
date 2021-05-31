@@ -19,32 +19,28 @@ END wait_timer;
 
 ARCHITECTURE wt of wait_timer is
   signal timer_val: unsigned(timer_width-1 downto 0);
+  signal timer_zero: std_logic;
+  signal last_timer: std_logic;
 BEGIN
+
+  timer_zero <= not or_reduce(std_logic_vector(timer_val));
+  timer_is_zero <= timer_zero;
+  timer_reached_zero <= timer_zero xor last_timer;
+  
   waitp : PROCESS (clk, rst)
-    variable zero_flag : std_logic := '0';
-    variable last_zf : std_logic := '0';
   BEGIN
     -- load the value into the timer at reset
     if rst = '1' then
-      zero_flag := nor_reduce(std_logic_vector(wait_time));
       timer_val <= wait_time;
-      timer_reached_zero <= '0';
-      timer_is_zero <= zero_flag;
-      last_zf := '0';
+      last_timer <= '0';
       -- possibly add last_zf and zf = 1
     -- for every clock cycle decrement the timer value and update the state variable
     -- accordingly, triggering the timer zero flag as soon as the timer reaches zero
     elsif rising_edge(clk) then
-      last_zf := zero_flag;
-      zero_flag := nor_reduce(std_logic_vector(timer_val));
-      if zero_flag = '0'then
+      last_timer <= timer_zero;
+      if timer_zero = '0' then
         timer_val <= timer_val - to_unsigned(1, timer_width);
-      elsif (zero_flag and (zero_flag xor last_zf)) = '1' then
-        timer_reached_zero <= '1';
-      else
-        timer_reached_zero <= '0';
       end if;
-      timer_is_zero <= zero_flag;
     end if;
   END PROCESS;
 END wt;

@@ -60,24 +60,31 @@ BEGIN
       if rst = '1' then
         cycle_counter <= to_unsigned(0, cycle_tick_counter_width);
         speed_counter <= to_unsigned(0, speed_tick_counter_width);
-      elsif cycle_tick = '1' and cycle_counter_set = '0' then
-        cycle_counter <= cycle_counter + to_unsigned(1, cycle_tick_counter_width);
-        speed_counter <= (others => '0');
-        cycle_counter_set := '1';
-      elsif cycle_tick = '0' and cycle_counter_set = '1' then
-        cycle_counter_set := '0';
-      elsif speed_tick = '1' and speed_ind_set = '0' then
-        speed_counter <= speed_counter + to_unsigned(1, speed_tick_counter_width);
-        speed_ind_set := '1';
-      elsif speed_tick = '0' and speed_ind_set = '1' then
-        speed_ind_set := '0';
+      else
+        if cycle_tick = '1' and cycle_counter_set = '0' then
+          cycle_counter <= cycle_counter + to_unsigned(1, cycle_tick_counter_width);
+          speed_counter <= (others => '0');
+          cycle_counter_set := '1';
+        elsif cycle_tick = '0' and cycle_counter_set = '1' then
+          cycle_counter_set := '0';
+        end if;
+        if speed_tick = '1' and speed_ind_set = '0' then
+          speed_counter <= speed_counter + to_unsigned(1, speed_tick_counter_width);
+          speed_ind_set := '1';
+        elsif speed_tick = '0' and speed_ind_set = '1' then
+          speed_ind_set := '0';
+        end if;
       end if;
     end if;
   end process;
+  
   event_p: process ( clk ) is
   begin
     if rising_edge(clk) then
-      if peak_in = '1' then
+      if rst = '1' then
+        internal_event_ind <= '0';
+        event_out <= (others => '0');
+      elsif peak_in = '1' then
         event_out <= std_logic_vector(signal_in) & std_logic_vector(speed_counter) & std_logic_vector(cycle_counter) & std_logic_vector(timer_val);
         internal_event_ind <= '1';
       elsif internal_event_ind = '1' then
