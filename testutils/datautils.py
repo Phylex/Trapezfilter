@@ -27,16 +27,21 @@ def read_file(filepath):
     else:
         delim='\t'
     _ = f.readline().strip()
+    # the second line contains the units so it needs to be treated seperately
     line2 = f.readline().strip()
+    # discard empty line
     f.readline()
     units = []
     data = []
+    # extract the units from the second line
     for word in line2.split(delim):
         units.append(word.strip('()'))
+    # all other lines are assumed to contain data so read them into a list per row (of floats)
     for line in f.readlines():
         data.append(list(float(i) for i in line.split(delim)))
     if len(data[1]) != len(units):
         raise IndexError('number of units inconsistent with number of data columns')
+    # convert the data to si units using the units provided by the csv file
     for i, unit in enumerate(units):
         if len(unit) > 1:
             if unit[1:] in SI_units:
