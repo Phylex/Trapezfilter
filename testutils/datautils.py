@@ -22,7 +22,7 @@ def read_file(filepath):
           * units: metric units (and derivatives) in columns all normalized to not include prefixes
     '''
     f = open(filepath, 'r')
-    if filepath.split('.')[1]=="csv":
+    if filepath.split('.')[-1]=="csv":
         delim=','
     else:
         delim='\t'
